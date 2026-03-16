@@ -71,7 +71,7 @@ JavaScript      ██████░░░░░░░░░░░░░░░�
  
 ---
  
-## ⭐ Featured Projects
+## Featured Projects
  
 ### [`edge-pdm`](https://github.com/ZiadRafik) — Edge Predictive Maintenance
 > End-to-end TinyML pipeline: train an autoencoder (64→8→64), convert to TFLite, deploy on ESP32. Detects mechanical anomalies in real-time.
@@ -122,11 +122,11 @@ Standard IoT stack used across 3+ projects:
 Sensors → MQTT → Node-RED → InfluxDB → Grafana
 ```
  
-- ✅ Edge-first processing — minimize cloud dependency
-- ✅ TLS by default — security baked in, not bolted on
-- ✅ Docker Compose for reproducible deployments
-- ✅ REST APIs for device communication
-- ✅ Real-time dashboards (Grafana or custom React)
+-  Edge-first processing — minimize cloud dependency
+-  TLS by default — security baked in, not bolted on
+-  Docker Compose for reproducible deployments
+-  REST APIs for device communication
+-  Real-time dashboards (Grafana or custom React)
  
 ---
  
