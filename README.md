@@ -104,16 +104,6 @@ JavaScript      ██████░░░░░░░░░░░░░░░�
  
 ---
  
-### [`parking-iot`](https://github.com/ZiadRafik) — Smart Parking System
-> Smart parking with 6 ultrasonic sensors, auto-detection logic, and a polished Next.js dashboard with Framer Motion animations.
- 
-![Next.js](https://img.shields.io/badge/Next.js-15-cc1a1a?style=flat-square&labelColor=1a0000)
-![ESP32](https://img.shields.io/badge/ESP32-firmware-8b1111?style=flat-square&labelColor=1a0000)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-animated-5a0e0e?style=flat-square&labelColor=1a0000)
-![Sensors](https://img.shields.io/badge/sensors-6_ultrasonic-3a0000?style=flat-square&labelColor=1a0000)
- 
----
- 
 ## 🔄 Architecture Pattern
  
 Standard IoT stack used across 3+ projects:
