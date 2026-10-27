@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="t d">
+  <title id="t">Bouraoui Ziad Rafik — Embedded Systems, Edge AI and Industrial IoT</title>
+  <desc id="d">Engineering sheet profile. L3 SNIO at Université de Bretagne Sud, after the engineering cycle at ESTIN in AI and Data Science. Open to a 2–3 month embedded internship from April 2027.</desc>
+  <style>
+    .ink{fill:#171A1F}.mu{fill:#6B7280}.ac{fill:#A11D2E}.rule{stroke:#DAD3C8}
+    .sans{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  </style>
+  <rect width="1200" height="440" fill="#FAF7F2"/>
+  <rect x="24" y="24" width="1152" height="392" fill="none" stroke="#E3DDD3"/>
+  <text x="56" y="70" class="mono mu" font-size="13" letter-spacing="2">PROFILE / 01</text>
+  <text x="1144" y="70" text-anchor="end" class="mono ac" font-size="13" letter-spacing="2">OPEN TO INTERNSHIP · APRIL 2027</text>
+  <text x="56" y="158" class="sans ink" font-size="62" font-weight="700" letter-spacing="-1.5">Bouraoui Ziad Rafik</text>
+  <text x="58" y="198" class="sans mu" font-size="24">Embedded systems · Edge AI · Industrial IoT</text>
+  <line x1="56" y1="232" x2="1144" y2="232" class="rule"/>
+  <text x="56" y="268" class="mono ac" font-size="12" letter-spacing="2">01 / CURRENT</text>
+  <text x="56" y="298" class="sans ink" font-size="20">L3 SNIO — Université de Bretagne Sud</text>
+  <text x="56" y="324" class="sans mu" font-size="16">Digital systems, embedded computing and connected objects</text>
+  <text x="56" y="348" class="sans mu" font-size="16">After the engineering cycle at ESTIN (AI &amp; Data Science)</text>
+  <text x="620" y="268" class="mono ac" font-size="12" letter-spacing="2">02 / FOCUS</text>
+  <text x="620" y="298" class="sans ink" font-size="19">Secure firmware · real-time tasks · TinyML</text>
+  <text x="620" y="324" class="sans mu" font-size="16">ESP32 · STM32 · FreeRTOS · TensorFlow Lite Micro</text>
+  <text x="620" y="348" class="sans mu" font-size="16">Signed OTA · Secure Boot · MQTT · Modbus · OPC UA</text>
+  <line x1="56" y1="378" x2="1144" y2="378" class="rule"/>
+  <text x="56" y="404" class="mono mu" font-size="12">ziad-rafik.xyz</text>
+  <text x="620" y="404" class="mono mu" font-size="12">github.com/Ziarmex</text>
+  <text x="1144" y="404" text-anchor="end" class="mono mu" font-size="12">LORIENT, FR</text>
+</svg>

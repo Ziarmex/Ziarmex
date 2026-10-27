@@ -1,137 +1,139 @@
-<div align="center">
- 
-# Bouraoui Ziad Rafik
- 
-**`Computer Science Student · AI Specialization · ESTIN`**
- 
-4th-year CS student bridging the gap between **embedded systems**, **edge AI**, and modern web —
-building end-to-end IoT systems from bare-metal firmware to real-time dashboards. Based in 🇩🇿 Algeria.
- 
-![Industrial IoT](https://img.shields.io/badge/Industrial_IoT-expert-8b0000?style=flat-square&labelColor=1a0000)
-![Edge AI](https://img.shields.io/badge/Edge_AI-TinyML-8b0000?style=flat-square&labelColor=1a0000)
-![Open to Collaborate](https://img.shields.io/badge/Open_to-Collaborate-cc1a1a?style=flat-square&labelColor=1a0000)
- 
-</div>
- 
+<!-- Profile README · Bouraoui Ziad Rafik · rev. 2026.10 -->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg">
+  <img alt="Bouraoui Ziad Rafik — embedded systems, edge AI and industrial IoT" src="./assets/banner-light.svg" width="100%">
+</picture>
+
+<p align="center">
+  <a href="https://ziad-rafik.xyz"><b>Portfolio</b></a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="mailto:ziad.r.bouraoui@gmail.com"><b>Email</b></a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/Ziarmex?tab=repositories"><b>Repositories</b></a>
+</p>
+
+<br/>
+
+### 01 &nbsp;Profile
+
+I'm a computer engineering student in the L3 SNIO programme (digital systems, embedded computing and connected objects) at Université de Bretagne Sud, France, after the engineering cycle in AI & Data Science at ESTIN, Algeria. I build connected systems end to end: bare-metal firmware, real-time tasks, secure update paths and the dashboards that show what the device is doing.
+
+The part I care about is the layer where software meets hardware: making a device trustworthy, measurable and maintainable in the field, not just on the bench.
+
+<br/>
+
+### 02 &nbsp;Selected work
+
+**Secure OTA for ESP32** &nbsp;<sub>2026 · ESP-IDF, C, Secure Boot v2, TLS/PKI</sub>
+
+<table>
+  <tr>
+    <td width="130" valign="top"><sub>CONTEXT</sub></td>
+    <td>Firmware updates for fielded devices must be signed, version-gated, and recoverable when the new image is bad.</td>
+  </tr>
+  <tr>
+    <td valign="top"><sub>CONTRIBUTION</sub></td>
+    <td>Secure Boot v2 (RSA-3072 / RSA-PSS), AES-256 flash encryption, signed HTTPS OTA, anti-rollback and automatic rollback after a failed self-test. Release tooling signs the image and emits a SHA-256 manifest.</td>
+  </tr>
+  <tr>
+    <td valign="top"><sub>OUTCOME</sub></td>
+    <td>10/10 host tests for manifest and PKI. Two build configurations: development and Secure Boot + flash encryption. <a href="https://github.com/Ziarmex/esp32-secure-ota">Source</a>.</td>
+  </tr>
+</table>
+
+**FreeRTOS multi-sensor node** &nbsp;<sub>2026 · STM32L476, CMSIS-RTOS2, I2C, C</sub>
+
+<table>
+  <tr>
+    <td width="130" valign="top"><sub>CONTEXT</sub></td>
+    <td>A super-loop that reads I2C, computes statistics and prints over UART couples a fast sensor to a slow console. One blocking print destroys the sample period.</td>
+  </tr>
+  <tr>
+    <td valign="top"><sub>CONTRIBUTION</sub></td>
+    <td>Three fixed-priority tasks decoupled by queues (acquisition > processing > console), a pure-C ring-buffer core, DWT microsecond timestamps for latency and jitter, and tickless-idle low power.</td>
+  </tr>
+  <tr>
+    <td valign="top"><sub>OUTCOME</sub></td>
+    <td>6/6 host tests on the statistics core. Board latency and power measurements are pending hardware. <a href="https://github.com/Ziarmex/freertos-sensor-node">Source</a>.</td>
+  </tr>
+</table>
+
+**TinyML benchmark: float vs int8** &nbsp;<sub>2026 · TensorFlow Lite, ESP32, Python</sub>
+
+<table>
+  <tr>
+    <td width="130" valign="top"><sub>CONTEXT</sub></td>
+    <td>Edge-AI claims usually quote accuracy with no model size, latency, RAM or method, which makes the trade-off unverifiable.</td>
+  </tr>
+  <tr>
+    <td valign="top"><sub>CONTRIBUTION</sub></td>
+    <td>A reproducible harness that trains an autoencoder, exports float32, int8 PTQ and int8 QAT, then benchmarks every model on the host and on an ESP32. Results live in JSON and the README table is generated from it.</td>
+  </tr>
+  <tr>
+    <td valign="top"><sub>OUTCOME</sub></td>
+    <td>24.8 KB → 13.5 KB → 10.3 KB; 97.1% / 97.4% / 97.0% on the synthetic set; 14/14 tests. <a href="https://github.com/Ziarmex/tinyml-bench">Source</a>.</td>
+  </tr>
+</table>
+
+<sub>Also on my GitHub: <a href="https://github.com/Ziarmex/plc-gateway">plc-gateway</a> · <a href="https://github.com/Ziarmex/edge-pdm">edge-pdm</a> · <a href="https://github.com/Ziarmex/mini-plant">mini-plant</a> · <a href="https://github.com/Ziarmex/monitoring-stack">monitoring-stack</a> · <a href="https://github.com/Ziarmex/phone-server">phone-server</a>.</sub>
+
+<br/>
+
+### 03 &nbsp;Experience & education
+
+| Period | Role | Organisation |
+| :-- | :-- | :-- |
+| 2026 – 2027 | L3 SNIO — digital systems, embedded computing and connected objects | Université de Bretagne Sud, Lorient |
+| Jun – Jul 2025 | IT intern, information systems | Sonelgaz, Jijel |
+| 2022 – 2026 | Engineering cycle, AI & Data Science | ESTIN, Algeria |
+| 2022 | Baccalaureate, Experimental Sciences — 16.87/20 | Very Good honor |
+
+**Certifications:** TCF C2 (September 2025) · IELTS Academic 8.0 (August 2026).
+**Languages:** Arabic (native), French (C2), English (IELTS 8.0).
+
+<br/>
+
+### 04 &nbsp;Working together
+
+I'm looking for a **2–3 month embedded / edge-AI internship starting April 2027**, in France or internationally, in English or French. What I can take on immediately:
+
+- firmware and RTOS work on ESP32 and STM32
+- secure update paths: Secure Boot, signed OTA, rollback
+- TinyML measurement: model size, latency, RAM and accuracy
+- industrial data plumbing: MQTT, Modbus, OPC UA, dashboards
+
+The internship is required by my degree and covered by a convention with Université de Bretagne Sud. Outside France, the X2 student visa route with an invitation letter covers up to 180 days.
+
+<br/>
+
+### 05 &nbsp;Toolkit
+
+| Layer | Primary | Also used |
+| :-- | :-- | :-- |
+| Firmware | C, C++, ESP-IDF, STM32 HAL, CMSIS-RTOS2 / FreeRTOS | I2C, SPI, UART, DWT timing |
+| Edge AI | TensorFlow Lite Micro, int8 PTQ / QAT, FFT features | scikit-learn, pandas, NumPy |
+| Industrial IoT | MQTT, Modbus (TCP/RTU), OPC UA, Node-RED | OpenPLC |
+| Data & dashboards | InfluxDB, Grafana, Prometheus | MongoDB, Flux |
+| Delivery | Docker, Git, Linux, CI, Bash | TypeScript, React, Next.js |
+
+<br/>
+
+### 06 &nbsp;Activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ziarmex/Ziarmex/output/snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ziarmex/Ziarmex/output/snake.svg">
+  <img alt="Contribution graph being eaten by a snake" src="https://raw.githubusercontent.com/Ziarmex/Ziarmex/output/snake.svg" width="100%">
+</picture>
+
+<sub>Contribution graph, redrawn daily.</sub>
+
+<br/><br/>
+
 ---
- 
-## 🗣️ Languages
- 
-![TypeScript](https://img.shields.io/badge/TypeScript-TSX_·_198_files-cc1a1a?style=flat-square&logo=typescript&logoColor=white&labelColor=1a0000)
-![Python](https://img.shields.io/badge/Python-3.10+-8b1111?style=flat-square&logo=python&logoColor=white&labelColor=1a0000)
-![C++](https://img.shields.io/badge/C++-ESP32_Embedded-5a0e0e?style=flat-square&logo=cplusplus&logoColor=white&labelColor=1a0000)
-![JavaScript](https://img.shields.io/badge/JavaScript-Node.js-3a0000?style=flat-square&logo=javascript&logoColor=white&labelColor=1a0000)
- 
-```
-TypeScript/TSX  ████████████████████████████████████████░░░░░░░  62%  ~198 files
-Python          ███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  17%   14 files
-C++             ███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  11%    9 files
-JavaScript      ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  10%    8 files
-```
- 
----
- 
-## 🛠️ Tech Stack
- 
-**Frontend**
- 
-![Next.js](https://img.shields.io/badge/Next.js-15-cc1a1a?style=flat-square&logo=nextdotjs&logoColor=white&labelColor=1a0000)
-![React](https://img.shields.io/badge/React-19-8b1111?style=flat-square&logo=react&logoColor=white&labelColor=1a0000)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v3-5a0e0e?style=flat-square&logo=tailwindcss&logoColor=white&labelColor=1a0000)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-animated-3a0000?style=flat-square&logo=framer&logoColor=white&labelColor=1a0000)
-![Radix UI](https://img.shields.io/badge/Radix_UI-headless-3a0000?style=flat-square&labelColor=1a0000)
-![Recharts](https://img.shields.io/badge/Recharts-dataviz-3a0000?style=flat-square&labelColor=1a0000)
-![Vite](https://img.shields.io/badge/Vite-bundler-5a0e0e?style=flat-square&logo=vite&logoColor=white&labelColor=1a0000)
- 
-**ML / Edge AI**
- 
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-cc1a1a?style=flat-square&logo=tensorflow&logoColor=white&labelColor=1a0000)
-![TFLite Micro](https://img.shields.io/badge/TFLite_Micro-ESP32-8b1111?style=flat-square&labelColor=1a0000)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-5a0e0e?style=flat-square&logo=scikitlearn&logoColor=white&labelColor=1a0000)
-![NumPy](https://img.shields.io/badge/NumPy-3a0000?style=flat-square&logo=numpy&logoColor=white&labelColor=1a0000)
-![pandas](https://img.shields.io/badge/pandas-3a0000?style=flat-square&logo=pandas&logoColor=white&labelColor=1a0000)
-![MuJoCo](https://img.shields.io/badge/MuJoCo-3.x_·_simulation-4a0010?style=flat-square&labelColor=1a0000)
- 
-**Embedded & Protocols**
- 
-![ESP32](https://img.shields.io/badge/ESP32-Arduino_·_C++-cc1a1a?style=flat-square&labelColor=1a0000)
-![MQTT](https://img.shields.io/badge/MQTT-Mosquitto-8b1111?style=flat-square&labelColor=1a0000)
-![OPC UA](https://img.shields.io/badge/OPC_UA-node--opcua-5a0e0e?style=flat-square&labelColor=1a0000)
-![Modbus](https://img.shields.io/badge/Modbus_TCP-pymodbus-3a0000?style=flat-square&labelColor=1a0000)
-![TLS](https://img.shields.io/badge/TLS-1.2_·_cert_auth-4a0010?style=flat-square&labelColor=1a0000)
- 
-**Infra & Tools**
- 
-![Docker](https://img.shields.io/badge/Docker-Compose-cc1a1a?style=flat-square&logo=docker&logoColor=white&labelColor=1a0000)
-![InfluxDB](https://img.shields.io/badge/InfluxDB-2.7_·_time--series-8b1111?style=flat-square&logo=influxdb&logoColor=white&labelColor=1a0000)
-![Grafana](https://img.shields.io/badge/Grafana-dashboards-5a0e0e?style=flat-square&logo=grafana&logoColor=white&labelColor=1a0000)
-![Node-RED](https://img.shields.io/badge/Node--RED-flows-3a0000?style=flat-square&logo=nodered&logoColor=white&labelColor=1a0000)
-![MongoDB](https://img.shields.io/badge/MongoDB-nosql-3a0000?style=flat-square&logo=mongodb&logoColor=white&labelColor=1a0000)
-![License](https://img.shields.io/badge/license-MIT-2a2a2a?style=flat-square&labelColor=1a0000)
- 
----
- 
-## Featured Projects
- 
-### [`edge-pdm`](https://github.com/ZiadRafik) — Edge Predictive Maintenance
-> End-to-end TinyML pipeline: train an autoencoder (64→8→64), convert to TFLite, deploy on ESP32. Detects mechanical anomalies in real-time.
- 
-![Python](https://img.shields.io/badge/Python-TFLite-cc1a1a?style=flat-square&labelColor=1a0000)
-![C++](https://img.shields.io/badge/C++-ESP32-8b1111?style=flat-square&labelColor=1a0000)
-![TinyML](https://img.shields.io/badge/TinyML-autoencoder-5a0e0e?style=flat-square&labelColor=1a0000)
-![Accuracy](https://img.shields.io/badge/accuracy-88%25-3a0000?style=flat-square&labelColor=1a0000)
-![Latency](https://img.shields.io/badge/latency-%3C100ms-3a0000?style=flat-square&labelColor=1a0000)
-![Size](https://img.shields.io/badge/model-%3C100KB-3a0000?style=flat-square&labelColor=1a0000)
- 
----
- 
-### [`mini-plant`](https://github.com/ZiadRafik) — Secure Industrial IoT Plant
-> Complete Docker Compose stack: 6 IoT simulators, MQTT broker with TLS 1.2, Node-RED, InfluxDB, and Grafana. Automated security testing included.
- 
-![Docker](https://img.shields.io/badge/Docker-Compose-cc1a1a?style=flat-square&labelColor=1a0000)
-![MQTT](https://img.shields.io/badge/MQTT-TLS_1.2-8b1111?style=flat-square&labelColor=1a0000)
-![InfluxDB](https://img.shields.io/badge/InfluxDB-Grafana-5a0e0e?style=flat-square&labelColor=1a0000)
-![Simulators](https://img.shields.io/badge/simulators-6-3a0000?style=flat-square&labelColor=1a0000)
- 
----
- 
-### [`plc-gateway`](https://github.com/ZiadRafik) — Modbus → OPC UA Gateway
-> Industrial protocol conversion gateway for Industry 4.0 use cases. Full monitoring stack integration with sub-100ms latency.
- 
-![Node.js](https://img.shields.io/badge/Node.js-OPC_UA-cc1a1a?style=flat-square&labelColor=1a0000)
-![Modbus](https://img.shields.io/badge/Modbus_TCP-gateway-8b1111?style=flat-square&labelColor=1a0000)
-![Latency](https://img.shields.io/badge/latency-%3C100ms-3a0000?style=flat-square&labelColor=1a0000)
- 
----
- 
-## 🔄 Architecture Pattern
- 
-Standard IoT stack used across 3+ projects:
- 
-```
-Sensors → MQTT → Node-RED → InfluxDB → Grafana
-```
- 
--  Edge-first processing — minimize cloud dependency
--  TLS by default — security baked in, not bolted on
--  Docker Compose for reproducible deployments
--  REST APIs for device communication
--  Real-time dashboards (Grafana or custom React)
- 
----
- 
-## 📡 Currently Learning
- 
-![RL](https://img.shields.io/badge/Reinforcement_Learning-in_progress-cc1a1a?style=flat-square&labelColor=1a0000)
-![MuJoCo](https://img.shields.io/badge/MuJoCo-simulation-8b1111?style=flat-square&labelColor=1a0000)
-![Drones](https://img.shields.io/badge/Drone_Control_Systems-in_progress-5a0e0e?style=flat-square&labelColor=1a0000)
- 
----
- 
-<div align="center">
- 
-**ESTIN · Algeria · CS / AI Specialization · 2025**
- 
-`8 repos · ~274 files · actively maintained`
- 
-</div>
+
+<p align="center">
+  Looking for an embedded / edge-AI intern for April 2027? Write to <a href="mailto:ziad.r.bouraoui@gmail.com">ziad.r.bouraoui@gmail.com</a> with the team and the problem.
+  <br/><br/>
+  <sub>Sheet 01 of 01 · Rev. 2026.10</sub>
+</p>
